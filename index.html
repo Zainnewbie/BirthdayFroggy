@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#7acb8f" />
+  <title>Level 20 unlocked 🎮</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="pondCanvas" aria-hidden="true"></canvas>
+  <div class="mist" aria-hidden="true"></div>
+  <div id="floaters" aria-hidden="true"></div>
+
+  <main class="shell">
+    <section class="hero panel reveal">
+      <div class="hero-top">
+        <div class="badge">🐸 froggy birthday mode</div>
+        <button class="music-btn" id="musicBtn" type="button" aria-pressed="false">
+          ▶ Putar lagu
+        </button>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow">buat cipa, sedikit manis, sedikit absurd, sepenuhnya tulus</p>
+        <h1>Level 20 unlocked 🎮</h1>
+        <p class="lead">
+          selamat masuk chapter baru. semoga makin tenang, makin kuat, dan tetap jadi versi diri sendiri yang paling kamu suka.
+        </p>
+      </div>
+
+      <div class="frog-stage" aria-hidden="true">
+        <div class="lily lily-a"></div>
+        <div class="lily lily-b"></div>
+        <div class="lily lily-c"></div>
+        <div class="frog-face">
+          <span>🐸</span>
+        </div>
+        <div class="spark spark-a">✨</div>
+        <div class="spark spark-b">💚</div>
+        <div class="spark spark-c">🪷</div>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <article class="panel letter-card reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">surat kecil dari jauh</p>
+            <h2>Scroll pelan-pelan, isinya agak panjang</h2>
+          </div>
+          <div class="mini-note">aman buat dibaca sampai habis</div>
+        </div>
+
+        <div class="letter-scroll" id="letterScroll" tabindex="0" aria-label="Ucapan ulang tahun">
+          <div id="letterBody"></div>
+        </div>
+
+        <div class="scroll-controls" aria-label="Kontrol gulir">
+          <button type="button" class="ghost-btn" id="upBtn">↑ atas</button>
+          <button type="button" class="ghost-btn" id="downBtn">↓ bawah</button>
+          <button type="button" class="ghost-btn" id="topBtn">ke awal</button>
+          <button type="button" class="ghost-btn" id="bottomBtn">ke akhir</button>
+        </div>
+      </article>
+
+      <aside class="panel photo-card reveal">
+        <div class="section-head">
+          <div>
+            <p class="section-kicker">empat potret kecil</p>
+            <h2>disusun biar vibes-nya nyatu</h2>
+          </div>
+          <div class="mini-note">tap buat zoom dikit</div>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="polaroid tilt-1">
+            <img src="assets/sebel.webp" alt="Foto 1" loading="lazy" />
+            <figcaption>vibes paling clean</figcaption>
+          </figure>
+          <figure class="polaroid tilt-2">
+            <img src="assets/senyum.webp" alt="Foto 2" loading="lazy" />
+            <figcaption>senyum yang nggak bisa bohong</figcaption>
+          </figure>
+          <figure class="polaroid tilt-3">
+            <img src="assets/topi.webp" alt="Foto 3" loading="lazy" />
+            <figcaption>mode gemoy ultra</figcaption>
+          </figure>
+          <figure class="polaroid tilt-4">
+            <img src="assets/kaisar.webp" alt="Foto 4" loading="lazy" />
+            <figcaption>final boss birthday energy</figcaption>
+          </figure>
+        </div>
+
+        <div class="sticker-row" aria-hidden="true">
+          <span>🐸</span><span>💌</span><span>✨</span><span>🪷</span><span>💚</span>
+        </div>
+      </aside>
+    </section>
+
+    <footer class="panel footer reveal">
+      <p>putar lagunya, baca suratnya, dan nikmatin page-nya pelan-pelan.</p>
+      <p class="sign">With warm wishes,<br />The prince a.k.a kimoyy</p>
+    </footer>
+  </main>
+
+  <div id="audioHint" class="audio-hint hidden" role="status" aria-live="polite">
+    <div class="hint-card">
+      <div class="hint-emoji">🐸🎵</div>
+      <p>klik sekali buat nyalain lagu</p>
+      <button id="startAudioBtn" type="button">oke, putar</button>
+    </div>
+  </div>
+
+  <audio id="bgm" src="assets/glue-song.mp3" preload="auto" loop playsinline></audio>
+  <script src="script.js" defer></script>
+</body>
+</html>
